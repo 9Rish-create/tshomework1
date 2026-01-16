@@ -1,0 +1,13 @@
+{
+  "name": "tshomework1",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "webpack": "^5.x.x",
+    "webpack-cli": "^4.x.x",
+    "ts-loader": "^9.x.x",
+    "typescript": "^4.x.x"
+  }
+}
