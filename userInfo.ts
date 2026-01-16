@@ -1,4 +1,4 @@
-// userInfo.ts
+
 export interface Organization {
     name: string;
     position: string;
@@ -7,7 +7,7 @@ export interface Organization {
   export interface UserInfo {
     userid: string;
     name: string;
-    birthdate: string;   // ISO string
+    birthdate: string;   
     age: number;
     organization: Organization;
   }

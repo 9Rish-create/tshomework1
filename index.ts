@@ -1,8 +1,8 @@
-// index.ts
+
 import { usersArray } from './users';
 import { usersInfoArray } from './userInfo';
 
-// Объявляем интерфейс для возвращаемого объекта
+
 interface UserPosition {
   name: string;
   position: string;
@@ -10,7 +10,7 @@ interface UserPosition {
   gender: 'man' | 'woman';
 }
 
-// функция для получения массива нужных объектов
+
 function getUsersJobPositions(users: User[]): UserPosition[] {
   return users.map(user => {
     const info = usersInfoArray.find(u => u.userid === user.userid);
@@ -22,7 +22,7 @@ function getUsersJobPositions(users: User[]): UserPosition[] {
         gender: user.gender
       };
     } else {
-      // на случай, если info не найден
+      
       return {
         name: user.name,
         position: 'Unknown',

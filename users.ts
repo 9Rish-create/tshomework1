@@ -1,8 +1,8 @@
-// users.ts
+
 export interface User {
     userid: string;
     name: string;
-    gender: 'man' | 'woman'; // уточнено через литеральные типы
+    gender: 'man' | 'woman'; 
   }
   
   export const usersArray: User[] = [
