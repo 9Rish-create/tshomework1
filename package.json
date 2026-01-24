@@ -10,4 +10,6 @@
     "ts-loader": "^9.x.x",
     "typescript": "^4.x.x"
   }
+  
 }
+

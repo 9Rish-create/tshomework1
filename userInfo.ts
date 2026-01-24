@@ -1,15 +1,25 @@
 
+export interface UserInfo {
+  userid: string;
+  name: string;
+  birthdate: string;   
+  age: number;
+  organization: Organization;
+}
+
+
 export interface Organization {
     name: string;
     position: string;
   }
   
-  export interface UserInfo {
-    userid: string;
+  
+
+  export interface UserPosition {
     name: string;
-    birthdate: string;   
+    position: string;
     age: number;
-    organization: Organization;
+    gender: 'man' | 'woman';
   }
   
   export const usersInfoArray: UserInfo[] = [

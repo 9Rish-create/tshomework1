@@ -1,16 +1,13 @@
 
 import { usersArray } from './users';
 import { usersInfoArray } from './userInfo';
+import { User } from './users';
+import { UserPosition } from './userInfo';
 
 
-interface UserPosition {
-  name: string;
-  position: string;
-  age: number;
-  gender: 'man' | 'woman';
-}
 
 
+// функция для того, чтобы пройтись по импортированному интерфейсу User, который в свою очередь берет информацию из массива usersInfoArray по id.
 function getUsersJobPositions(users: User[]): UserPosition[] {
   return users.map(user => {
     const info = usersInfoArray.find(u => u.userid === user.userid);
@@ -35,3 +32,4 @@ function getUsersJobPositions(users: User[]): UserPosition[] {
 
 const usersPositions = getUsersJobPositions(usersArray);
 console.log('userPositions', usersPositions);
+
